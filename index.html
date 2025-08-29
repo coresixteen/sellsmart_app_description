@@ -32,7 +32,7 @@
             margin: 0;
         }
         
-        /* 유튜브 영상 컨테이너 (기존과 동일) */
+        /* 유튜브 영상 컨테이너 */
         .video-container {
             position: relative;
             width: 100%;
@@ -49,13 +49,24 @@
             border: none;
         }
 
-        /* ★★★★★ PDF 이미지 스타일 (새로 추가/수정됨) ★★★★★ */
+        /* PDF 이미지 스타일 */
         .pdf-page {
-            width: 100%;      /* 너비를 꽉 채워서 모바일에서 보기 좋게 함 */
-            height: auto;     /* 높이는 원본 비율에 맞게 자동 조절 */
-            display: block;   /* 이미지 아래에 생기는 불필요한 여백 제거 */
+            width: 100%;
+            height: auto;
+            display: block;
         }
         
+        /* 면책/저작권 텍스트 스타일 */
+        .disclaimer {
+            margin: 24px auto;
+            padding: 16px;
+            font-size: 0.9em;
+            line-height: 1.5;
+            color: #495057;
+            background-color: #fafafa;
+            border-top: 1px solid #dee2e6;
+        }
+
         /* PC 화면용 스타일 */
         @media (min-width: 601px) {
             .wrapper {
@@ -76,7 +87,7 @@
             <h1>셀스마트 앱 소개</h1>
         </div>
 
-        <!-- 유튜브 영상 영역 (기존과 동일) -->
+        <!-- 유튜브 영상 -->
         <div class="video-container">
             <iframe src="https://www.youtube.com/embed/WzFyh-p10hM?si=rplL_1dQNDDrbKSb" 
                     title="YouTube video player" 
@@ -85,11 +96,7 @@
             </iframe>
         </div>
 
-        <!-- 
-          ★★★★★ PDF 이미지 표시 영역 (수정됨) ★★★★★
-          PDF 뷰어 대신 <img> 태그를 사용합니다.
-          파일 이름이 스크린샷과 정확히 일치하도록 수정했습니다.
-        -->
+        <!-- PDF 이미지 영역 -->
         <img class="pdf-page" src="셀스마트소개_page-0001.jpg" alt="PDF 1페이지">
         <img class="pdf-page" src="셀스마트소개_page-0002.jpg" alt="PDF 2페이지">
         <img class="pdf-page" src="셀스마트소개_page-0003.jpg" alt="PDF 3페이지">
@@ -103,6 +110,16 @@
         <img class="pdf-page" src="셀스마트소개_page-0011.jpg" alt="PDF 11페이지">
         <img class="pdf-page" src="셀스마트소개_page-0012.jpg" alt="PDF 12페이지">
         <img class="pdf-page" src="셀스마트소개_page-0013.jpg" alt="PDF 13페이지">
+
+        <!-- (주)코어16 면책/저작권 문구 -->
+        <div class="disclaimer">
+            <ul>
+                <li>본 데이터는 (주)코어16의 책임하에 제공하는 데이터로 실제가 아닌 추정치이며 오류 및 지연이 발생할 수 있습니다.</li>
+                <li>본 데이터가 해당 종목의 수익성, 안정성을 보장하지 않으므로 해당 데이터를 이용한 종목 투자에 따른 발생 손실의 책임은 투자자 본인에게 귀속됩니다.</li>
+                <li>셀스마트 콘텐츠는 (주)코어16이 배포/운영하는 저작물로서 모든 권한은 (주)코어16에게 있습니다.</li>
+                <li>따라서, 어떠한 경우에도 어떠한 형태로든 복제, 배포, 전송, 변형, 대여할 수 없습니다.</li>
+            </ul>
+        </div>
 
     </div>
 
